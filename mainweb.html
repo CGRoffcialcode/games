@@ -4,15 +4,64 @@
         <title>The best HTML5 games</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" type="image/x-icon" href="html5-3384014_640.png">
-        
+        <script src="https://cdn.htmlgames.com/ads.txt"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
     <body>
-    <div id="flex">
+    <div id="flex"></div>
+    <a href="#contents"><button>Contents</button></a>
+        <h1 class="hacks">hacks</h1>
         <h1>The best HTML5 games!</h1>
+        <p>Welcome to the mass of the best HTML5 games! Click on a image to launch the game! Your data is saved locally, which means that restarting the website doesn't delete your data, only if you visit it on a different account or  different device.</p>
     </div>
+
+    <div id="arcade">
+        <h1>Arcade games</h1>
+
+        <button class="restart" onclick="location.reload()">Close
+        </button>
+
+
+        <img type="image"onclick="show()" id="Textriximg" src="https://www.htmlgames.com/uploaded/game/thumb/tetrix300200.webp">
+
+        <div id="Textrix">
+
+            <script src="https://cdn.htmlgames.com/embed.js?game=Tetrix&amp;bgcolor=white"></script>
+        </div>
+
+        <button class="restart" onclick="location.reload()">Close
+        </button>
+
+
+        <img type="image"onclick="show1()" id="pac_manimg" src="https://www.htmlgames.com/uploaded/game/thumb/classicpac300200.webp">
         
+        <div id="pac_man">
+            <script src="https://cdn.htmlgames.com/embed.js?game=ClassicPac&amp;bgcolor=white"></script>
+        </div>
+
+    </div>
+
+    <script>
+        function show() {
+            /* Access image by id and change 
+            the display property to block*/
+            document.getElementById('Textrix').style.display = "block";
+            
+            document.getElementById('Textriximg').style.display = "none";
+            
+        }
+
+        function show1() {
+            /* Access image by id and change 
+            the display property to block*/
+            document.getElementById('pac_man').style.display = "block";
+            
+            document.getElementById('pac_manimg').style.display = "none";
+            
+        }
+    </script>
     </body>
+    
 </html>
